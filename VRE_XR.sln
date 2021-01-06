@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{60A9B207-2499-4FFB-EC3E-4B10E3D5EAF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google Cloud Streaming Speech-to-Text.Editor", "Google Cloud Streaming Speech-to-Text.Editor.csproj", "{E999F1C1-E7D9-2434-15F5-48593F755152}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{B03DC228-EF82-4F09-71A7-98DC9FEAC1DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google Cloud Streaming Speech-to-Text.Runtime", "Google Cloud Streaming Speech-to-Text.Runtime.csproj", "{A256205F-2B8E-EDF0-103C-95C50B7153C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{C314F90F-58C0-17DF-B692-5EFABDBCC9D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60A9B207-2499-4FFB-EC3E-4B10E3D5EAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A9B207-2499-4FFB-EC3E-4B10E3D5EAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A9B207-2499-4FFB-EC3E-4B10E3D5EAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A9B207-2499-4FFB-EC3E-4B10E3D5EAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E999F1C1-E7D9-2434-15F5-48593F755152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E999F1C1-E7D9-2434-15F5-48593F755152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E999F1C1-E7D9-2434-15F5-48593F755152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E999F1C1-E7D9-2434-15F5-48593F755152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B03DC228-EF82-4F09-71A7-98DC9FEAC1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03DC228-EF82-4F09-71A7-98DC9FEAC1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03DC228-EF82-4F09-71A7-98DC9FEAC1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03DC228-EF82-4F09-71A7-98DC9FEAC1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A256205F-2B8E-EDF0-103C-95C50B7153C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A256205F-2B8E-EDF0-103C-95C50B7153C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A256205F-2B8E-EDF0-103C-95C50B7153C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A256205F-2B8E-EDF0-103C-95C50B7153C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C314F90F-58C0-17DF-B692-5EFABDBCC9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C314F90F-58C0-17DF-B692-5EFABDBCC9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C314F90F-58C0-17DF-B692-5EFABDBCC9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C314F90F-58C0-17DF-B692-5EFABDBCC9D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

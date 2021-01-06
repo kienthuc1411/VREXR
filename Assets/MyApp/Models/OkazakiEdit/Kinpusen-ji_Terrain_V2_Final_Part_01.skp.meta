@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: d1afff4955697af4c876573e1112d115
+SketchUpImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: '[Wood_ Floor]'
+    second: {fileID: 2100000, guid: 011556399f9c03f44b1c6a4cade4815c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: _defaultMat
+    second: {fileID: 2100000, guid: ee20103d3859d03418b173de8660c629, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen1
+    second: {fileID: 2100000, guid: 74fa64741ab96104a9955207cc5f848d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen10
+    second: {fileID: 2100000, guid: 7bd45127739ad304badfc73951d72cde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen3#1
+    second: {fileID: 2100000, guid: 82dee621b8cfc9d4ca1fe2b5693e5ea8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen3#2
+    second: {fileID: 2100000, guid: 17b84d032927e0243bc6ef063403556b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen3#3
+    second: {fileID: 2100000, guid: f5a23abfef442a9488feba7d61639614, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen3#4
+    second: {fileID: 2100000, guid: 5591e6b7629613b4ea6c7c48d2e67e6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen4
+    second: {fileID: 2100000, guid: 35278c1ef8522914cb1e3c90e9895a7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen6
+    second: {fileID: 2100000, guid: 883059f959e6ffe429ba711da7549694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen7
+    second: {fileID: 2100000, guid: ae6dc392420f20349b507759c97caab7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen8
+    second: {fileID: 2100000, guid: 3c5596982f948c44fb32ddcc8f1c1285, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusen9
+    second: {fileID: 2100000, guid: 4082f03ae33aceb40be547fd1093d372, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusenbesidebldgwall1
+    second: {fileID: 2100000, guid: 411ac07c770822c429423438fb00ce60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusenfloor
+    second: {fileID: 2100000, guid: 677a0a0f32ba0164689d2f261f9a44f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusengrill1
+    second: {fileID: 2100000, guid: 2fc2298c517920d42ba2706378ce2b6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusengrillgate1
+    second: {fileID: 2100000, guid: 56b82f7192b63434bb29cdddf49afdac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusengrillside
+    second: {fileID: 2100000, guid: 283bc1dd9b398074b8564ba26b8adbcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusensidegrill
+    second: {fileID: 2100000, guid: dfdfe9d873952ee42a889af8b122ee63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusensteps
+    second: {fileID: 2100000, guid: 4e88a81dc40227f499b04e43512ea86a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusensteps1
+    second: {fileID: 2100000, guid: 5e4d6f8f5544a904a9432fe08d626ada, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusensteps1#1
+    second: {fileID: 2100000, guid: 70604cda882549540a34c1a27a66307c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusensteps1#2
+    second: {fileID: 2100000, guid: 9bdcc996f95f0e9408ee0b51a09954f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusenstepscolor2
+    second: {fileID: 2100000, guid: 98c5d7d4e8de2c440ba1a9f9b644ac67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusenstepscolor2#1
+    second: {fileID: 2100000, guid: b019f0828f638254bb57f3ef9b6eb568, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusenstone
+    second: {fileID: 2100000, guid: c5bcd9a9f83ddc04eaf478d641420760, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusenstonetop
+    second: {fileID: 2100000, guid: 7237f096272ec1d4887bba5e05ef389e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusenstonetop#1
+    second: {fileID: 2100000, guid: 4594564a1c1065844b0f486f18510136, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusenstonetop1#2
+    second: {fileID: 2100000, guid: 6ed4d3e6d07f52843ac80581a33614a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusenstonetop123
+    second: {fileID: 2100000, guid: ab7aba6d3256cb747ae73e675bc1222d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusentop1#3
+    second: {fileID: 2100000, guid: 8768a58e586b04045a0791256b48826f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusentop1#4
+    second: {fileID: 2100000, guid: c12e6857f97a8f742843edf48db190ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusentop1#5
+    second: {fileID: 2100000, guid: 809702e74461acc499195a96a10fc9d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusentoproof
+    second: {fileID: 2100000, guid: a3ef38556220f644c984cf12a29d917b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusentoproof3
+    second: {fileID: 2100000, guid: be9fbd9469386ac48bc30a1037c6d094, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kinpusentoprooftexture
+    second: {fileID: 2100000, guid: 67fd8874f01929d4a981d89b2dc58be3, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 2
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.0254
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  generateBackFace: 1
+  mergeCoplanarFaces: 0
+  selectedNodes: 0000000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d000000
+  assetHash:
+    serializedVersion: 2
+    Hash: a210aeeeda4d229720ff243a22e80d19
+  fileUnit: 0

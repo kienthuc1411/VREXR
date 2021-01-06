@@ -1,0 +1,16 @@
+<svg id="bg" xmlns="http://www.w3.org/2000/svg" width="690" height="282" viewBox="0 0 690 282">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0.95;
+      }
+
+      .cls-2 {
+        fill: #0056d7;
+      }
+    </style>
+  </defs>
+  <rect id="長方形_19" data-name="長方形 19" class="cls-1" width="690" height="282" rx="30" ry="30"/>
+  <path id="長方形_1_のコピー_2" data-name="長方形 1 のコピー 2" class="cls-2" d="M30,0H660a30,30,0,0,1,30,30V80a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V30A30,30,0,0,1,30,0Z"/>
+</svg>
