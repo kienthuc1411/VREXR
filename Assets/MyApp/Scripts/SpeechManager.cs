@@ -47,7 +47,7 @@ public class SpeechManager : MonoBehaviour
     public GameObject scoreRank;
     public GameObject soundBar;
     public GameObject STTHandler;
-    [HideInInspector]
+    //[HideInInspector]
     public List<GameObject> convoLogs = new List<GameObject>();
 
     [Header("Sections")]
@@ -169,21 +169,21 @@ public class SpeechManager : MonoBehaviour
 
         // Auto scroll convoLog to bottom
         // Scroll only works in Clamped mode. Have to return to Elastic manually
-        if (autoScrollToBottom)
-        {
-            if (convoLogScrollRect.movementType != ScrollRect.MovementType.Clamped)
-            {
-                convoLogScrollRect.movementType = ScrollRect.MovementType.Clamped;
-            }
-            conversationLog.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, 20 * Time.deltaTime);
-        }
-        else
-        {
-            if (convoLogScrollRect.movementType != ScrollRect.MovementType.Elastic)
-            {
-                convoLogScrollRect.movementType = ScrollRect.MovementType.Elastic;
-            }
-        }
+        //if (autoScrollToBottom)
+        //{
+        //    if (convoLogScrollRect.movementType != ScrollRect.MovementType.Clamped)
+        //    {
+        //        convoLogScrollRect.movementType = ScrollRect.MovementType.Clamped;
+        //    }
+        //    conversationLog.GetComponent<RectTransform>().anchoredPosition += new Vector2(0, 20 * Time.deltaTime);
+        //}
+        //else
+        //{
+        //    if (convoLogScrollRect.movementType != ScrollRect.MovementType.Elastic)
+        //    {
+        //        convoLogScrollRect.movementType = ScrollRect.MovementType.Elastic;
+        //    }
+        //}
 
         if (director.conversationLength > 0)
         {
@@ -253,7 +253,7 @@ public class SpeechManager : MonoBehaviour
                         }
                         else
                         {
-                            SpawnConversationLog(player_log_mode, basePlayerConvoLog);
+                            SpawnConversationLog(player_log_mode, basePlayerConvoLog, sprConvoLogRankD);//ThaoEm
                         }
                     }
                     else if (confidence > 20 && confidence <= 40) // C
@@ -267,7 +267,7 @@ public class SpeechManager : MonoBehaviour
                         }
                         else
                         {
-                            SpawnConversationLog(player_log_mode, basePlayerConvoLog);
+                            SpawnConversationLog(player_log_mode, basePlayerConvoLog, sprConvoLogRankC);//ThaoEm
                         }
                     }
                     else if (confidence > 40 && confidence <= 60) // B
@@ -281,7 +281,7 @@ public class SpeechManager : MonoBehaviour
                         }
                         else
                         {
-                            SpawnConversationLog(player_log_mode, basePlayerConvoLog);
+                            SpawnConversationLog(player_log_mode, basePlayerConvoLog, sprConvoLogRankB);//ThaoEm
                         }
                     }
                     else if (confidence > 60 && confidence <= 80) // A
@@ -295,7 +295,7 @@ public class SpeechManager : MonoBehaviour
                         }
                         else
                         {
-                            SpawnConversationLog(player_log_mode, basePlayerConvoLog);
+                            SpawnConversationLog(player_log_mode, basePlayerConvoLog, sprConvoLogRankA);//ThaoEm
                         }
                     }
                     else if (confidence > 80 && confidence <= 100) // S
@@ -309,7 +309,7 @@ public class SpeechManager : MonoBehaviour
                         }
                         else
                         {
-                            SpawnConversationLog(player_log_mode, basePlayerConvoLog);
+                            SpawnConversationLog(player_log_mode, basePlayerConvoLog, sprConvoLogRankS);//ThaoEm
                         }
                     }
 
@@ -528,7 +528,7 @@ public class SpeechManager : MonoBehaviour
         // Add cloned convo log to list
         convoLogs.Add(cloneConvoLog);
 
-        autoScrollToBottom = true;
+        //autoScrollToBottom = true;
     }
 
     /// <summary>
@@ -536,7 +536,7 @@ public class SpeechManager : MonoBehaviour
     /// </summary>
     public void OnDraggingLog()
     {
-        autoScrollToBottom = false;
+        //autoScrollToBottom = false;
     }
 
     #endregion
@@ -545,6 +545,7 @@ public class SpeechManager : MonoBehaviour
     public void RecordClick()
     {
         AudioManager.PlaySound(Sounds.Click);
+        speechToText.text = " ";
         if (!sttHandler.isReadyToTranscribe)
         {
             sttHandler.isReadyToTranscribe = true; // co the gui du lieu
@@ -631,15 +632,30 @@ public class SpeechManager : MonoBehaviour
 
         // Blur convolog section
         conversationLogSection.GetComponent<Image>().color = col;
+        // Blur other convo logs
+        for (int i = 0; i < convoLogs.Count; i++)
+        {
+            if (i != logIndex)
+            {
+                convoLogs[i].GetComponent<Image>().color = col;
+
+                foreach (Transform child in convoLogs[i].transform.GetChild(6).transform)
+                {
+                    if (child.GetComponent<Image>() != null && child.gameObject.activeInHierarchy)
+                        child.GetComponent<Image>().color = col;
+                }
+
+            }
+        }
 
         // Blur Result section (If Active)
         if (resultSection.activeInHierarchy)
         {
             resultSection.GetComponent<Image>().color = col;
-            Debug.Log("AAA");
+            
             foreach (Transform child in resultSection.transform)
             {
-                Debug.Log("AAA1");
+                
                 if (child.GetComponent<Image>() != null)
                     child.GetComponent<Image>().color = col;
             }
@@ -665,11 +681,9 @@ public class SpeechManager : MonoBehaviour
         // Blur Result section (If Active)
         if (resultSection.activeInHierarchy)
         {
-            resultSection.GetComponent<Image>().color = col;
-            Debug.Log("AAA");
+            resultSection.GetComponent<Image>().color = col;//ThaoEm
             foreach (Transform child in resultSection.transform)
             {
-                Debug.Log("AAA1");
                 if (child.GetComponent<Image>() != null)
                     child.GetComponent<Image>().color = col;
             }
@@ -677,20 +691,7 @@ public class SpeechManager : MonoBehaviour
 
         viewPortScrollRect.color = col;
 
-        // Blur other convo logs
-        for (int i = 0; i < convoLogs.Count; i++)
-        {
-            if (i != logIndex)
-            {
-                convoLogs[i].GetComponent<Image>().color = col;
-                foreach (Transform child in convoLogs[i].transform.GetChild(6).transform)
-                {
-                    if (child.GetComponent<Image>() != null && child.gameObject.activeInHierarchy)
-                        child.GetComponent<Image>().color = col;
-                }
-            }
-        }
-
+       
        
     }
 
@@ -705,7 +706,17 @@ public class SpeechManager : MonoBehaviour
         // Unblur convolog section
         conversationLogSection.GetComponent<Image>().color = col;
 
-        
+        // Unblur other convo logs
+        foreach (GameObject convo in convoLogs)
+        {
+            convo.GetComponent<Image>().color = col;
+
+            foreach (Transform child in convo.transform.GetChild(6).transform)
+            {
+                if (child.GetComponent<Image>() != null && child.gameObject.activeInHierarchy)
+                    child.GetComponent<Image>().color = col;
+            }
+        }
 
         // Unblur NPC speech section
         if (npcSpeechSection.activeInHierarchy)
@@ -735,16 +746,7 @@ public class SpeechManager : MonoBehaviour
 
         viewPortScrollRect.color = col;
 
-        // Unblur other convo logs
-        foreach (GameObject convo in convoLogs)
-        {
-            convo.GetComponent<Image>().color = col;
-            foreach (Transform child in convo.transform.GetChild(6).transform)
-            {
-                if (child.GetComponent<Image>() != null && child.gameObject.activeInHierarchy)
-                    child.GetComponent<Image>().color = col;
-            }
-        }
+        
     }
     #endregion
 
@@ -755,6 +757,7 @@ public class SpeechManager : MonoBehaviour
         repeatNpcSpeakButton.gameObject.SetActive(false); // ThaoEm
         //isRecord = true;
         currentConversation = listConversation[startIndex];
+        
         nextConversation = null;
         //if (startIndex < conversationLength - 1)
         //{

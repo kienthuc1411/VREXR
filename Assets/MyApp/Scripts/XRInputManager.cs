@@ -13,9 +13,26 @@ public class XRInputManager : MonoBehaviour
     
     public Transform XRRig;
     public Camera CameraXRRig;
+    public GameObject ScenarioList, ModeSelection;
+
+    public void ToggleAvatarEdit(GameObject gameObject)
+    {
+        if (!gameObject.activeInHierarchy)
+        {
+            gameObject.transform.position = XRRig.position;
+            gameObject.transform.eulerAngles = new Vector3(0, CameraXRRig.transform.eulerAngles.y, 0);
+            gameObject.SetActive(true);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
+    }
 
     public void ToggleSettingPanel(GameObject gameObject)
     {
+        if (ScenarioList.activeSelf || ModeSelection.activeSelf)
+            return;
         if (!gameObject.activeInHierarchy)
         {
             gameObject.transform.position = XRRig.position;

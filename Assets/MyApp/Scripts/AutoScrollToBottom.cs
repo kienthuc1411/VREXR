@@ -18,8 +18,18 @@ public class AutoScrollToBottom : MonoBehaviour
     {
         if(count != transform.childCount)
         {
-            scrollRect.verticalScrollbar.value = 0;
-            count = transform.childCount;
+            
+            StartCoroutine(ForceScrollDown());
+
         }
+    }
+    IEnumerator ForceScrollDown()
+    {
+        // Wait for end of frame AND force update all canvases before setting to bottom.
+        yield return new WaitForSeconds(0.3f);
+        Canvas.ForceUpdateCanvases();
+        scrollRect.verticalNormalizedPosition = 0f;
+        Canvas.ForceUpdateCanvases();
+        count = transform.childCount;
     }
 }

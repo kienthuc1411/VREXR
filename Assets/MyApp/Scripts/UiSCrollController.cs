@@ -11,20 +11,47 @@ public class UiSCrollController : MonoBehaviour
     private InputDevice targetDevice;
     public ScrollRect scollRect;
     private Vector2 inputValue;
+    public float speed = 0.5f;
+    //public Text Text;
 
     private void Start()
     {
+        TryInitialize();
+    }
+
+    private void TryInitialize()
+    {
         List<InputDevice> devices = new List<InputDevice>();
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
-    }
 
-
-    private void Update()
-    {
-        if (targetDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 value))
+        if (devices.Count > 0)
         {
-            inputValue = value;
-            scollRect.verticalNormalizedPosition = inputValue.y;
+            targetDevice = devices[0];
         }
     }
+    private void Update()
+    {
+        if (!targetDevice.isValid)
+        {
+            TryInitialize();
+        }
+        else
+        {
+            Scroll();
+        }
+    }
+
+    private void Scroll()
+    {
+        
+        if (targetDevice.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 inputValue))
+        {
+            //Text.text = inputValue.ToString();
+            if(inputValue.y != 0)
+                scollRect.normalizedPosition += inputValue * ( Time.deltaTime * speed);
+         
+        }
+    }
+
+   
 }

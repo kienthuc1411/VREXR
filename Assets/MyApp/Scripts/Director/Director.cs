@@ -70,6 +70,8 @@ public class Director : MonoBehaviour
     [HideInInspector]
     public List<ScenarioDetail> listConversation = new List<ScenarioDetail>();
 
+    public SpeechManager speechManager;
+
     // Private
     [Header("Private Variables")]
     [SerializeField]
@@ -268,6 +270,7 @@ public class Director : MonoBehaviour
     public void ClickBackToModeSelection(GameObject invoker)
     {
         AudioManager.PlaySound(Sounds.ClickButtonCancel);
+        speechToTextSection.SetActive(false);//ThaoEm
         SetupNewGame();
         invoker.SetActive(false);
         modeSelectSection.SetActive(true);
@@ -296,6 +299,7 @@ public class Director : MonoBehaviour
         playerSpeechSection.SetActive(false);
         resultSection.SetActive(false);
         resultSectionButton.SetActive(false);
+        speechToTextSection.SetActive(false);//ThaoEm
         conversationLogSection.SetActive(false); //ThaoEm
         foreach (Transform child in conversationLog.transform)//ThaoEm
         {
@@ -358,12 +362,16 @@ public class Director : MonoBehaviour
 
     public void ClickReplayScenario()
     {
+        speechManager.convoLogs = new List<GameObject>();
         AudioManager.PlaySound(Sounds.Click);
         // Clear conversation log
         foreach (Transform child in conversationLog.transform)
         {
             Destroy(child.gameObject);
         }
+        //setnewlistConlog
+
+
         SetupNewGame();
         modeSelectSection.SetActive(false);
         StartRequesting();
